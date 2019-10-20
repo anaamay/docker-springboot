@@ -22,7 +22,24 @@ sudo docker run -p 8080:8080 docker-springboot-app
 Step-6: Here 8080 is the port what is defined in springboot property file. Now check the application will come up on below url:
 http://localhost:8080/welcome/docker/hello
 
----------------------------------------
-End
+--------------------------------------- 
+
+******************Pushing an image in docker repository
+
+Step-1: Run the below command to build an image in the current directory
+sudo docker build -t anaamay/docker-springboot-app:latest .
+
+Step-2: Login to the docker account by using your credentials(In case you don't have a docker account kindly create one)
+  sudo docker login  -u <username> -p <password>
   
+Step-3: Push an image an to docker repositiry
+sudo docker push anaamay/docker-springboot-app:latest
+
+Now you will see the image has been placed to your docker repository
+Step-4:to check the recently poushed image in your docker repository please check by using below command
+sudo docker image ls
+REPOSITORY                                      TAG                 IMAGE ID            CREATED             SIZE
+anaamay/docker-springboot-app                   latest              3f1449bc3708        15 minutes ago      488MB
+
+-------------Thank You----------------------  
   
