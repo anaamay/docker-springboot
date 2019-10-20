@@ -36,6 +36,8 @@ Step-3: Push an image an to docker repositiry
 sudo docker push anaamay/docker-springboot-app:latest
 
 Now you will see the image has been placed to your docker repository
+
+
 Step-4:to check the recently poushed image in your docker repository please check by using below command
 sudo docker image ls
 REPOSITORY                                      TAG                 IMAGE ID            CREATED             SIZE
