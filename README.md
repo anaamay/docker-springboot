@@ -1,11 +1,13 @@
 # docker-springboot
 
 Step-1: Check the docker is installed in you machine. run below commands and it will display the installed docker version.
-  docker -v
+ 
+docker -v
 Docker version 19.03.3, build a872fc2f86
 
-Step-2: If docker is inastalled in your mahchine, please  go to the project home directory and run the below commands to 
+Step-2: If docker is inastalled in your mahchine, go to the project home directory and run the below commands to 
 build a docker image.
+
 sudo docker build -f Dockerfile -t docker-springboot-app .
 
 Step-3: After successfully execution of below comands a docker image will be created.
